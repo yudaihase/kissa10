@@ -64,7 +64,13 @@
         </style>
     </head>
     <body>
-        <p>hase.ishikawa</p>
+        
+        <br>
+        <br>
+        <p>あかさたな</p>
+        <br>
+        <br>
+
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
