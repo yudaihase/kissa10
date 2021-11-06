@@ -18,10 +18,12 @@ class CreateUsersTable extends Migration
             Schema::create('users', function (Blueprint $userstable) {
                 $userstable->Increments('id'); //勝手に採番される
                 $userstable->string('user_name')->unique();
-                $userstable->string('e_mail')->unique();
+                $userstable->string('email')->unique();
+                $table->timestamp('email_verified_at')->nullable();
                 $userstable->string('password');
                 $userstable->string('role');
                 $userstable->rememberToken()->nullable(); // nullを許容したい時
+                $table->string('belongs'); 
             });
         }
     }
